@@ -10,10 +10,18 @@ module.exports = {
     },
     extend: {
       colors: {
-        VeryLightGrayishBlue: "hsl(240, 78%, 98%)",
-        LightGrayishBlue: "hsl(234, 14%, 74%)",
-        GrayishBlue: "hsl(233, 13%, 49%)",
-        DarkGrayishBlue: "hsl(232, 13%, 33%)",
+        "very-light-grayish-blue": "hsl(240, 78%, 98%)",
+        "light-grayish-blue": "hsl(234, 14%, 74%)",
+        "grayish-blue": "hsl(233, 13%, 49%)",
+        "dark-grayish-blue": "hsl(232, 13%, 33%)",
+      },
+      linearGradientColors: {
+        "custom-gradient": ["hsl(236, 72%, 79%)", "hsl(237, 63%, 64%)"],
+      },
+      fontFamily: {
+        cinzel: ["Cinzel", "serif"],
+        montserrat: ["Montserrat", "sans-serif"],
+        sedgwick: ["Sedgwick Ave Display", "cursive"],
       },
     },
   },
