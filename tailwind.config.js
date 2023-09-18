@@ -14,6 +14,8 @@ module.exports = {
         "light-grayish-blue": "hsl(234, 14%, 74%)",
         "grayish-blue": "hsl(233, 13%, 49%)",
         "dark-grayish-blue": "hsl(232, 13%, 33%)",
+        "light-blue": "hsl(236, 72%, 79%)",
+        "medium-blue-purple": "hsl(237, 63%, 64%)",
       },
       linearGradientColors: {
         "custom-gradient": ["hsl(236, 72%, 79%)", "hsl(237, 63%, 64%)"],
