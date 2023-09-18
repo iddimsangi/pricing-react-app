@@ -1,7 +1,7 @@
 import "./App.css";
 import { useState } from "react";
 import PriceCardList from "./PriceCardList";
-const packages = [
+const Monthlypackages = [
   { packageName: "Basic", cost: 19.99, storage: "500 GB", users: 2, upto: 3 },
   {
     packageName: "Professional",
@@ -12,12 +12,25 @@ const packages = [
   },
   { packageName: "Master", cost: 39.99, storage: "2TB", users: 10, upto: 20 },
 ];
+
+const Annualypackages = [
+  { packageName: "Basic", cost: 199.99, storage: "500 GB", users: 2, upto: 3 },
+  {
+    packageName: "Professional",
+    cost: 249.99,
+    storage: "1TB",
+    users: 5,
+    upto: 10,
+  },
+  { packageName: "Master", cost: 399.99, storage: "2TB", users: 10, upto: 20 },
+];
 function App() {
-  const [myPackages, setMyPackages] = useState(packages);
+  const [myPackages, setMyPackages] = useState(Annualypackages);
   const [isChecked, setIsChecked] = useState(false);
-  const isCheckedHandler = (e) => {
-    e.preventDefault();
-    console.log("clicked");
+  console.log(isChecked);
+  const isCheckedHandler = () => {
+    setIsChecked(!isChecked);
+    setMyPackages(isChecked ? Annualypackages : Monthlypackages);
   };
   return (
     <div className="flex flex-col justify-center items-center  min-h-screen rounded shadow-xl bg-white m-6 p-4 md:space-y-0">
@@ -30,8 +43,8 @@ function App() {
           <input
             type="checkbox"
             id="toggle-switch"
-            value={isChecked}
-            onChange={isCheckedHandler}
+            checked={isChecked} // Use "checked" instead of "value"
+            onChange={isCheckedHandler} // Toggle the state directly
             className="w-10 h-6 bg-gradient-to-r from-light-blue to-medium-blue-purple appearance-none rounded-xl relative"
           />
           <h4 className="text-lg text-light-grayish-blue">Monthly</h4>
