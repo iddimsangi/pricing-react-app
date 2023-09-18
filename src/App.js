@@ -1,5 +1,5 @@
 import "./App.css";
-
+// import backImg from "../public/images/bg-top.svg";
 function App() {
   return (
     <div className="flex flex-col justify-center items-center min-h-screen rounded shadow-xl bg-white m-6 p-4 md:space-y-0">
@@ -9,7 +9,11 @@ function App() {
         </h1>
         <div className="flex justify-center items-center space-x-4">
           <h4 className="text-lg text-light-grayish-blue">Annualy</h4>
-          <input type="checkbox" />
+          <input
+            type="checkbox"
+            id="toggle-switch"
+            className="w-10 h-5 bg-gradient-to-r from-light-blue to-medium-blue-purple appearance-none rounded-xl relative"
+          />
           <h4 className="text-lg text-light-grayish-blue">Monthly</h4>
         </div>
       </header>
@@ -17,7 +21,7 @@ function App() {
         <div className="flex flex-col items-center justify-center  space-y-3 p-6  rounded-lg shadow-3xl m-1">
           <h3 className="text-grayish-blue text-lg font-bold">Basic</h3>
           <h1 className="text-6xl text-extrabold text-dark-grayish-blue flex items-center">
-            <span className="text-2xl font-bold font-montserrat">$</span>199.99
+            <span className="text-2xl font-black font-montserrat">$</span>19.99
           </h1>
           <ul className="text-sm min-w-full text-center">
             <li className="text-grayish-blue font-bold min-w-full p-3  border-y">
@@ -30,14 +34,14 @@ function App() {
               Send Up to 3 GB
             </li>
           </ul>
-          <button className="bg-gradient-to-r from-light-blue to-medium-blue-purple  uppercase text-xs text-white py-2 px-6 rounded-lg min-w-full  transition duration-200 hover:translate-y-1 hover:scale-105">
+          <button className="bg-gradient-to-r from-light-blue to-medium-blue-purple  uppercase text-xs text-white py-2 px-6 rounded-lg min-w-full  transition duration-200 hover:-translate-y-1 hover:scale-105">
             Learn More
           </button>
         </div>
         <div className="flex flex-col md:scale-110 items-center justify-center m-1 bg-gradient-to-r from-light-blue to-medium-blue-purple text-white  space-y-3 p-6  rounded-lg shadow-3xl ">
           <h3 className=" text-lg font-bold">Professional</h3>
           <h1 className="text-6xl text-extrabold flex items-center">
-            <span className="text-2xl font-bold font-montserrat">$</span>249.99
+            <span className="text-2xl font-bold font-montserrat">$</span>24.99
           </h1>
           <ul className="text-sm min-w-full text-center">
             <li className="font-bold min-w-full p-3  border-y">1TB Storage</li>
@@ -48,14 +52,14 @@ function App() {
               Send Up to 10 GB
             </li>
           </ul>
-          <button className="bg-white uppercase text-xs text-dark-grayish-blue py-2 px-6 rounded-lg min-w-full  transition duration-200 hover:translate-y-1 hover:scale-105">
+          <button className="bg-white uppercase text-xs text-dark-grayish-blue py-2 px-6 rounded-lg min-w-full  transition duration-200 hover:-translate-y-1 hover:scale-105">
             Learn More
           </button>
         </div>
         <div className="flex flex-col items-center justify-center  space-y-3 p-6  rounded-lg shadow-3xl m-1">
           <h3 className="text-grayish-blue text-lg font-bold">Master</h3>
           <h1 className="text-6xl text-extrabold text-dark-grayish-blue flex items-center">
-            <span className="text-2xl font-bold font-montserrat">$</span>399.99
+            <span className="text-2xl font-bold font-montserrat">$</span>39.99
           </h1>
           <ul className="text-sm min-w-full text-center">
             <li className="text-grayish-blue font-bold min-w-full p-3  border-y">
@@ -68,7 +72,7 @@ function App() {
               Send Up to 20 GB
             </li>
           </ul>
-          <button className="bg-gradient-to-r from-light-blue to-medium-blue-purple  uppercase text-xs text-white py-2 px-6 rounded-lg min-w-full transition duration-200 hover:translate-y-1 hover:scale-105">
+          <button className="bg-gradient-to-r from-light-blue to-medium-blue-purple  uppercase text-xs text-white py-2 px-6 rounded-lg min-w-full transition duration-200 hover:-translate-y-1 hover:scale-105">
             Learn More
           </button>
         </div>

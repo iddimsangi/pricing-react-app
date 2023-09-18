@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#toggle-switch::after{
+    content:"";
+    @apply h-5 w-5 bg-white rounded-full absolute top-0 left-0 cursor-pointer;
+}
+#toggle-switch:checked::after{
+    @apply transition duration-200 translate-x-5;
+}
