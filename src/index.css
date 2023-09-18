@@ -4,8 +4,14 @@
 
 #toggle-switch::after{
     content:"";
-    @apply h-5 w-5 bg-white rounded-full absolute top-0 left-0 cursor-pointer;
+    @apply h-5 w-5 bg-white rounded-full absolute top-[2px] left-0 cursor-pointer transition duration-200;
 }
 #toggle-switch:checked::after{
     @apply transition duration-200 translate-x-5;
+}
+.custom-card-css{
+    @apply flex flex-col items-center justify-center  m-1  space-y-3 p-6  rounded-lg shadow-3xl bg-gradient-to-r from-light-blue to-medium-blue-purple text-white md:scale-110;
+}
+.card-css {
+    @apply flex flex-col items-center justify-center  space-y-3 p-6  rounded-lg shadow-3xl m-1;
 }
