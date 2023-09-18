@@ -17,6 +17,9 @@ module.exports = {
         "light-blue": "hsl(236, 72%, 79%)",
         "medium-blue-purple": "hsl(237, 63%, 64%)",
       },
+      boxShadow: {
+        "3xl": "rgba(0, 0, 0, 0.24) 0px 3px 8px",
+      },
       linearGradientColors: {
         "custom-gradient": ["hsl(236, 72%, 79%)", "hsl(237, 63%, 64%)"],
       },
