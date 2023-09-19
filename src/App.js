@@ -33,7 +33,7 @@ function App() {
     setMyPackages(isChecked ? Annualypackages : Monthlypackages);
   };
   return (
-    <div className="flex flex-col justify-center items-center  min-h-screen rounded shadow-xl bg-white m-6 p-4 md:space-y-0">
+    <div className="flex flex-col justify-center items-center  min-h-screen rounded shadow-xl bg-white md:m-6 p-4 md:space-y-0">
       <header className="flex flex-col justify-center items-center space-y-3 mb-6 md:mb-12">
         <h1 className="text-grayish-blue font-montserrat font-semibold text-3xl">
           Our pricing
