@@ -9,6 +9,10 @@ module.exports = {
       xl: "1440px",
     },
     extend: {
+      backgroundImage: {
+        // "top-background": "url('/images/bg-top.svg')",
+        // "footer-background": "url('./public/images/bg-bottom.svg')",
+      },
       colors: {
         "very-light-grayish-blue": "hsl(240, 78%, 98%)",
         "light-grayish-blue": "hsl(234, 14%, 74%)",

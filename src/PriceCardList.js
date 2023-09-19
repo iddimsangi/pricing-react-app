@@ -1,7 +1,7 @@
 import PriceCard from "./PriceCard";
 function PriceCardList({ packages, setmyPackages }) {
   return (
-    <div className="flex flex-col space-y-6 md:flex-row md:space-y-0">
+    <div className="flex flex-col space-y-6 md:flex-row md:space-y-0 bg-[url('./images/bg-bottom.svg')] bg-left-bottom">
       {packages.map((packge, index) => (
         <PriceCard
           packageName={packge.packageName}

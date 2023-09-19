@@ -13,5 +13,5 @@
     @apply flex flex-col items-center justify-center  m-1  space-y-3 p-6  rounded-lg shadow-3xl bg-gradient-to-r from-light-blue to-medium-blue-purple w-60 text-white md:scale-110;
 }
 .card-css {
-    @apply flex flex-col items-center justify-center  space-y-3 p-6  rounded-lg shadow-3xl w-60 m-1;
+    @apply flex flex-col items-center justify-center  space-y-3 p-6  rounded-lg shadow-3xl w-60 m-1 bg-white;
 }
