@@ -46,9 +46,9 @@ function PriceCard({ packageName, cost, storage, users, upto, setmyPackages }) {
       <button
         className={`${
           packageName === "Professional"
-            ? "bg-white text-grayish-blue"
+            ? "bg-white text-grayish-blue hover:bg-gradient-to-r hover:from-medium-blue-purple hover:to-medium-blue-purple hover:text-white"
             : "bg-gradient-to-r from-light-blue to-medium-blue-purple text-white "
-        }   uppercase text-xs  py-2 px-6 rounded-lg min-w-full  transition duration-200 hover:-translate-y-1 hover:scale-105`}
+        }   uppercase text-xs  py-3 px-6 rounded-lg min-w-full  transition duration-200 hover:-translate-y-1 hover:scale-105  hover:border-white hover:ring-2 hover:ring-medium-blue-purple hover:bg-gradient-to-r hover:from-white hover:to-white hover:text-medium-blue-purple hover:ring-inset`}
       >
         Learn More
       </button>

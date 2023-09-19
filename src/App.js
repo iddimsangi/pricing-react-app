@@ -34,8 +34,8 @@ function App() {
     setMyPackages(isChecked ? Annualypackages : Monthlypackages);
   };
   return (
-    <div className="flex flex-col justify-center items-center  min-h-screen rounded shadow-2xl md:m-6 p-4 md:space-y-0 md:h-36 md:mt-2">
-      <header className="flex flex-col justify-center items-center space-y-3 mb-6 md:mb-12 bg-[url('./images/bg-top.svg')] bg-no-repeat bg-right-top bg-cover ">
+    <div className="flex flex-col justify-center items-center  min-h-screen rounded shadow-2xl md:m-6 p-4 bg-[url('./images/bg-top.svg')] bg-no-repeat bg-right-top bg-auto  md:space-y-0 md:h-36 md:mt-2">
+      <header className="flex flex-col justify-center items-center space-y-3 mb-6 md:mb-12">
         <h1 className="text-grayish-blue font-montserrat font-semibold text-3xl">
           Our pricing
         </h1>
