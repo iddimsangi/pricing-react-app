@@ -46,7 +46,7 @@ function App() {
             id="toggle-switch"
             checked={isChecked} // Use "checked" instead of "value"
             onChange={isCheckedHandler} // Toggle the state directly
-            className="w-10 h-6 bg-gradient-to-r from-light-blue to-medium-blue-purple appearance-none rounded-xl relative"
+            className="w-10 h-6 bg-gradient-to-r from-light-blue to-medium-blue-purple appearance-none rounded-xl relative hover:opacity-75 cursor-pointer transition duration-150"
           />
           <h4 className="text-lg text-light-grayish-blue">Monthly</h4>
         </div>
