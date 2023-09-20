@@ -38,7 +38,7 @@ Users should be able to:
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
-
+Learning and practicing more.
 ### Built with
 
 - React
